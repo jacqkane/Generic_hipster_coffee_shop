@@ -2,15 +2,90 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $font-family;
 }
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee {
+  width: 70%;
+  margin-left: 15%;
+  margin-left: 15%;
+}
+
+.menu__title {
+  margin-top: 3%;
+}
+
+.menu__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 .espresso {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .espresso__price {
   display: flex;
   justify-content: space-between;
+}
+
+.special__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.espresso__title {
+  margin: 3% 0;
+}
+
+.special__title {
+  margin: 4% 0;
+}
+
+.beverages {
+  width: 70%;
+  margin-left: 15%;
+  margin-left: 15%;
+}
+
+.beverages__title {
+  margin-top: 2%;
+}
+
+.beverages__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.machine {
+  text-align: center;
+}
+
+.machine-detail {
+  width: 60%;
 }
