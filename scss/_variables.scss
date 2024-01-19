@@ -13,3 +13,13 @@ $text-size-h2: 2rem;
 $text-size-h3: 1.5rem;
 $text-size-p:1rem;
 $font-family: 'Roboto Condensed', sans-serif;
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
