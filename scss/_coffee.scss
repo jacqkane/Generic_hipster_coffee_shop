@@ -26,20 +26,20 @@ body {
     padding: 3rem;
     height: 15rem;
     width: 100vw;
-    
+
     &__content {
-    width: 80%;
-    @include flex-column;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    
-  
-    @media (min-width: 600px) {
-      @include flex-row;
-      justify-content: space-between;
+        width: 80%;
+        @include flex-column;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media (min-width: 600px) {
+            @include flex-row;
+            justify-content: space-between;
+        }
     }
-  }
 }
 
 
@@ -114,6 +114,7 @@ footer {
             }
 
             >p {
+                height: 5rem;
                 font-size: $text-size-p*0.8;
                 padding: 20px;
             }
