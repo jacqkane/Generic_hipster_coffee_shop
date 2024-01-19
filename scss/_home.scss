@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  * {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
   
   header {
     background-color: rgb(236, 226, 226);
@@ -31,4 +36,42 @@
     @include flex-row;
     justify-content: space-between;
     width: 15rem;
+
+      &__link {
+        text-decoration: none;
+        color: grey;
+      }
   }
+
+  .footer {
+    @include flex-column;
+    align-items: center;
+    background-color: rgb(66, 64, 64);
+    height: 12rem;
+  }
+  
+  .footer__nav {
+    @include flex-row;
+    width: 15rem;
+    justify-content: space-around;
+
+      &__link {
+        color: white;
+      }
+  }
+
+  .footer__sub {
+    @include flex-column;
+    align-items: center;
+    
+
+      &__hash {
+        color: white;
+        font-size: 18px;
+      }
+
+      &__links {
+        color: white;
+      }
+  }
+
