@@ -12,31 +12,54 @@ html {
     box-sizing: inherit;
 }
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
+
 
 header {
-    width: 100vw;
-    height: 20vh;
-    background-color: lightgrey;
+    background-color: rgb(236, 226, 226);
+    @include flex-column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    height: 15rem;
 
+    @media (min-width: 600px) {
+        @include flex-row;
+        justify-content: space-between;
+    }
 }
+
+
 
 footer {
     width: 100vw;
     height: 20vh;
-    background-color: darkgray
+    background-color: darkgray;
 }
 
 
 
+.main__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+}
 
 .coffee__main {
     width: 80vw;
@@ -142,4 +165,37 @@ footer {
 
 
 
+}
+
+
+.footer {
+    @include flex-column;
+    align-items: center;
+    background-color: rgb(66, 64, 64);
+    height: 12rem;
+}
+
+.footer__nav {
+    @include flex-row;
+    width: 15rem;
+    justify-content: space-around;
+
+    &__link {
+        color: white;
+    }
+}
+
+.footer__sub {
+    @include flex-column;
+    align-items: center;
+
+
+    &__hash {
+        color: white;
+        font-size: 18px;
+    }
+
+    &__links {
+        color: white;
+    }
 }
