@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+    margin: 0px;
+    Padding: 0px;
+    font-family: $font-family;
+    font-size: $text-size-basis;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: lightgrey;
+
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: darkgray
+}
+
+
+
+
+
+.coffee__main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    >h1 {
+        align-self: flex-start;
+
+    }
+
+    p {
+        text-align: justify;
+
+        >em {
+            text-decoration: underline;
+            color: $color-text-lightblue;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        >span {
+            font-size: $text-size-p*0.8;
+            font-weight: bolder;
+        }
+    }
+
+    .coffee__main__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: center;
+
+        .coffee__card {
+            width: 22rem;
+            height: 30rem;
+            margin: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: $color-background-lightgrey;
+
+            >h2 {
+                font-size: $text-size-h2*0.6;
+                background: $color-background-lightgrey;
+                padding-left: 20px;
+            }
+
+            >p {
+                font-size: $text-size-p*0.8;
+                padding: 20px;
+            }
+
+
+            .picture-background {
+                height: 22rem;
+                width: 22rem;
+            }
+
+            .quejina__picture {
+
+                background-image: url(/img/smcr-quejina.jpg);
+                background-size: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .mormora__picture {
+
+                background-image: url(/img/smcr-mormora.jpg);
+                background-size: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .kamwangi__picture {
+
+                background-image: url(/img/smcr-kamwangi.jpg);
+                background-size: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .decafespresso__picture {
+                width: 22rem;
+                height: 22rem;
+                background-image: url(/img/smcr-decaf-espresso.jpg);
+                background-size: auto;
+                background-size: cover;
+                background-position: center;
+            }
+
+        }
+
+
+
+    }
+
+
+
+}
