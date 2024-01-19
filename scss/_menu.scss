@@ -2,24 +2,28 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $font-family;
 }
 
 .menu {
   width: 70%;
   margin-left: 15%;
   margin-left: 15%;
-  background-color: antiquewhite;
 }
 
 .menu__box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
 
 .espresso {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .espresso__price {
@@ -36,4 +40,30 @@
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.espresso__title {
+  margin: 3% 0;
+}
+
+.special__title {
+  margin: 4% 0;
+}
+
+.beverages {
+  width: 70%;
+  margin-left: 15%;
+  margin-left: 15%;
+}
+
+.beverages__title {
+  margin-top: 2%;
+}
+
+.beverages__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
