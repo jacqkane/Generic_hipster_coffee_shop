@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     margin: 0px;
-    Padding: 0px;
+    padding: 0px;
     font-family: $font-family;
     font-size: $text-size-basis;
 }
@@ -15,28 +15,51 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+
+.header {
+    background-color: rgb(236, 226, 226);
+    @include flex-column;
     align-items: center;
-}
-
-header {
+    justify-content: center;
+    padding: 3rem;
+    height: 15rem;
     width: 100vw;
-    height: 20vh;
-    background-color: lightgrey;
 
+    &__content {
+        width: 80%;
+        @include flex-column;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media (min-width: 600px) {
+            @include flex-row;
+            justify-content: space-between;
+        }
+    }
 }
+
+
 
 footer {
     width: 100vw;
     height: 20vh;
-    background-color: darkgray
+    background-color: darkgray;
 }
 
 
 
+.main__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
 
+}
 
 .coffee__main {
     width: 80vw;
@@ -70,14 +93,14 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
         align-content: center;
 
         .coffee__card {
             width: 22rem;
             height: 30rem;
-            margin: 20px 0px;
+            margin: 20px 20px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -142,4 +165,43 @@ footer {
 
 
 
+}
+
+
+.footer {
+    @include flex-column;
+    align-items: center;
+    background-color: rgb(66, 64, 64);
+    height: 19rem;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: -3rem;
+    padding: 4rem;
+}
+
+.footer__nav {
+    @include flex-row;
+    width: 15rem;
+    justify-content: space-around;
+    // margin-top: 3rem;
+
+    &__link {
+        color: white;
+    }
+}
+
+.footer__sub {
+    @include flex-column;
+    align-items: center;
+
+
+    &__hash {
+        color: white;
+        font-size: 18px;
+        margin: 2rem;
+    }
+
+    &__links {
+        color: white;
+    }
 }
