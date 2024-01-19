@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipster coffee</title>
+    <!-- <link rel="stylesheet" href="style.scss" /> -->
+    <link rel="stylesheet" href="scss/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <img class="logo" src="logo.svg" alt="generic coffee logo" />
+        <nav class="nav">
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="menu.html">Menu</a>
+          <a class="nav__link" href="coffee.html">Coffee</a>
+          <a class="nav__link" href="">Our Story</a>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="content">
+        <div class="titles">
+          <h1 class="titles__main">GENERIC HIPSTER COFFEE</h1>
+          <h2 class="titles__sub">
+            SPECIALTY COFFEE, FRESH FOOD & LOCAL COMMUNITY.
+          </h2>
+        </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hipster coffee</title>
-  <!-- <link rel="stylesheet" href="style.scss" /> -->
-  <link rel="stylesheet" href="scss/index.scss" />
-</head>
+        <div class="img__div">
+          <img class="img" src="img\counter.jpg" alt="coffee counter" />
+        </div>
 
-<body>
-  <header class="header">
-    <img class="logo" src="logo.svg" alt="generic coffe logo" />
-
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Home</a>
-      <a class="nav__link" href="menu.html">Menu</a>
-      <a class="nav__link" href="coffee.html">Coffee</a>
-      <a class="nav__link" href="">Our Story</a>
-    </nav>
-  </header>
-  <div class="main">
-    <div class="titles">
-      <h1 class="titles__main">GENERIC HIPSTER COFFEE</h1>
-      <h2 class="titles__sub">
-        SPECIALTY COFFEE, FRESH FOOD & LOCAL COMMUNITY.
-      </h2>
+        <div class="info">
+          <div class="info__sub">
+            <h3 class="info__hours__title">OPENING HOURS</h3>
+            <p class="info__hours__sub">sunday - thursday: 8:00 - 23:00</p>
+          </div>
+          <div class="info__sub">
+            <h3>BOOK A TABLE</h3>
+            <p class="info__book__sub">call +1 415-321-4567</p>
+          </div>
+          <div class="info__sub">
+            <h3>ADDRESS</h3>
+            <p class="info__address__sub">
+              321 Ivy St. San Francisco, CA 94102
+            </p>
+          </div>
+        </div>
+        <div class="map__container">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5476333340366!2d-122.42605162369559!3d37.77720391201934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580989a43e76d%3A0x45f1b189ee3b07b3!2s321%20Ivy%20St%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2suk!4v1705666444986!5m2!1sen!2suk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!-- **************END OF MAIN!!!! -->
     </div>
-  </div>
-  <footer class="footer">
-    <nav class="footer__nav">
-      <a class="footer__nav__link" href="">Home</a>
-      <a class="footer__nav__link" href="menu.html">Menu</a>
-      <a class="footer__nav__link" href="coffee.html">Coffee</a>
-      <a class="footer__nav__link" href="">Our Story</a>
-    </nav>
-    <div class="footer__sub">
-      <p class="footer__sub__hash"><b>#HIPSTERSMAKECOFEE</b></p>
-      <p class="footer__sub__links">
-        Follow us on <a class="" href="#">Twitter</a> and
-        <a href="#">Instagram</a>
-      </p>
-    </div>
-  </footer>
-</body>
 
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a class="footer__nav__link" href="">Home</a>
+        <a class="footer__nav__link" href="menu.html">Menu</a>
+        <a class="footer__nav__link" href="coffee.html">Coffee</a>
+        <a class="footer__nav__link" href="">Our Story</a>
+      </nav>
+      <div class="footer__sub">
+        <p class="footer__sub__hash"><b>#HIPSTERSMAKECOFEE</b></p>
+        <p class="footer__sub__links">
+          Follow us on <a class="socialmedia" href="#">Twitter</a> and
+          <a class="socialmedia" href="#">Instagram</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

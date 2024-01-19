@@ -5,10 +5,24 @@
   font-family: $font-family;
 }
 
-.menu {
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee {
   width: 70%;
   margin-left: 15%;
   margin-left: 15%;
+}
+
+.menu__title {
+  margin-top: 3%;
 }
 
 .menu__box {
@@ -66,4 +80,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.machine {
+  text-align: center;
+}
+
+.machine-detail {
+  width: 60%;
 }
