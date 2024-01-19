@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 70%;
+  margin-left: 15%;
+  margin-left: 15%;
+  background-color: antiquewhite;
+}
+
+.menu__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.espresso {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.espresso__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
